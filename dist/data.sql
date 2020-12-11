@@ -3,10 +3,10 @@
 # Generation Time: Tue Nov 24 2020 20:05:11 GMT+0800 (GMT+08:00)
 # ************************************************************
 
-DROP TABLE IF EXISTS `province`;
-CREATE TABLE `province` (
+DROP TABLE IF EXISTS `provinces`;
+CREATE TABLE `provinces` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `code` bigint(12) DEFAULT NULL COMMENT '行政区划代码',
+  `code` varchar(32) DEFAULT NULL COMMENT '行政区划代码',
   `name` varchar(32) DEFAULT NULL COMMENT '名称',
   `province` varchar(32) DEFAULT NULL COMMENT '省/直辖市',
   `city` varchar(32) DEFAULT NULL COMMENT '市',
